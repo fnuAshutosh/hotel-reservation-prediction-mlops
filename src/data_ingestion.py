@@ -20,7 +20,7 @@ class DataIngestion:
 
         os.makedirs(RAW_DIR, exist_ok=True)
 
-        logger.info("Data Ingestion initialized with {self.bucket_name} and {self.file_name}")
+        logger.info(f"Data Ingestion initialized with {self.bucket_name} and {self.file_name}")
 
 
     def download_csv_from_gcp(self):
@@ -42,7 +42,7 @@ class DataIngestion:
         try:
             logger.info("Splitting data into train and test sets.")
             data = pd.read_csv(RAW_FILE_PATH)
-            train_data, test_data = train_test_split(data, test_size=self.train_test_ratio, random_state=42)
+            train_data, test_data = train_test_split(data, test_size=1-self.train_test_ratio, random_state=42)
 
             train_data.to_csv(TRAIN_FILE_PATH, index=False)
             test_data.to_csv(TEST_FILE_PATH, index=False)
@@ -71,6 +71,6 @@ class DataIngestion:
 
 
 if __name__ == "__main__":
-
-    data_ingestion = DataIngestion(CONFIG_PATH)
+    config = read_yaml(CONFIG_PATH)
+    data_ingestion = DataIngestion(config)
     data_ingestion.run()

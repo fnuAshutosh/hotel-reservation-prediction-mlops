@@ -1,5 +1,5 @@
 data_ingestion:
-  bucket_name: "fnu_ashutosh_ml_project_1"
-  bucket_file_name: "Hotel_Reservations.csv"
-  train_ratio = 0.8
-  test_ratio = 0.2
+bucket_name: "fnu_ashutosh_ml_project_1"
+bucket_file_name: "Hotel_Reservations.csv"
+train_ratio: 0.8
+test_ratio: 0.2
