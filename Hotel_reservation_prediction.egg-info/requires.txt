@@ -2,4 +2,8 @@ pandas
 numpy
 google-cloud-storage
 scikit-learn
-PyYAML
+pyyaml
+imbalanced-learn
+lightgbm
+mlflow
+flask

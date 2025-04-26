@@ -5,8 +5,11 @@ Hotel_reservation_prediction.egg-info/dependency_links.txt
 Hotel_reservation_prediction.egg-info/requires.txt
 Hotel_reservation_prediction.egg-info/top_level.txt
 config/__init__.py
+config/model_params.py
 config/paths_configs.py
 src/__init__.py
 src/custom_exception.py
 src/data_ingestion.py
+src/data_preprocessing.py
 src/logger.py
+src/model_training.py
