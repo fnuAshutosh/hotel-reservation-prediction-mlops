@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from src.logger import getlogger
 from src.custom_exception import CustomException
 from config.paths_configs import *
-from utils.common_function import read_yaml
+from ..utils.common_function import read_yaml
 
 
 logger = getlogger(__name__)
