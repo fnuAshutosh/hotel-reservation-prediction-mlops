@@ -1,8 +1,8 @@
 from src.data_ingestion import DataIngestion
 from src.data_preprocessing import DataPreprocessing
 from src.model_training import ModelTraining
-from utils.common_function import read_yaml
-from config.paths_configs import *
+from ..utils.common_function import read_yaml
+from ..config.paths_configs import *
 
 
 if __name__=="__main__":
