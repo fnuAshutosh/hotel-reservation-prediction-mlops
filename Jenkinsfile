@@ -27,7 +27,7 @@ pipeline {
                     echo 'Setting up virtual environment and dependencies...' 
                     sh ''' 
                         python -m venv ${VENV_DIR}
-                        source ${VENV_DIR}/bin/activate
+                        . ${VENV_DIR}/bin/activate
                         pip install -e .
                     '''
                 }
