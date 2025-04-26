@@ -3,11 +3,11 @@ from scipy.stats import randint,uniform
 
 # Define the parameter grid for Random Forest
 LIGHTGM_PARAMS = {
-    'n_estimators': randint(100, 2000),
-    'max_depth': randint(5, 50),
+    'n_estimators': randint(100, 500),
+    'max_depth': randint(5, 15),
     'learning_rate': uniform(0.01, 0.2),
-    'num_leaves': randint(20, 100),
-    'boosting_type': ['gbdt', 'dart', 'goss'],
+    'num_leaves': randint(20, 59),
+    'boosting_type': ['gbdt', 'dart'],
 
 }
 
